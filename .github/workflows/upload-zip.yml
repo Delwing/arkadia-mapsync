@@ -1,0 +1,25 @@
+name: Add .zip package
+on:
+  release:
+    types: [published]
+
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'arkadia-mapsync.zip'
+          exclusions: '*.git*'
+      - name: Upload Arkadia installer xml to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: arkadia-mapsync.zip
+          asset_name: arkadia-mapsync.zip
+          tag: ${{ github.ref }}
+          overwrite: true
+     
