@@ -24,11 +24,11 @@ jobs:
           asset_name: arkadia-mapsync.zip
           tag: ${{ github.ref }}
           overwrite: true
-      - name: bump version
-        run: python ./.github/workflows/bump_version.py ${{ github.ref }}
       - uses: actions/checkout@master
         with:
             ref: "master"
+      - name: bump version
+        run: python ./.github/workflows/bump_version.py ${{ github.ref }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: bump version
