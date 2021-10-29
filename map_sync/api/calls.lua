@@ -29,13 +29,5 @@ function map_sync:print_changelog()
 end
 
 function map_sync:update_mapsync_scripts_if_necessary(force)
-    HttpClient:get(string.format("https://api.github.com/repos/%s/releases/latest", map_sync.repository), {}, function(response)
-        local tag = response.tag_name
-        local zipball = response.zipball_url
-        if map_sync.version ~= tag or force then
-            scripts.plugins_installer:uninstall(map_sync.plugin_id)
-            scripts.plugins_installer:install_from_url(zipball)
-            scripts.state_store:set(map_sync.plugin_id, tag)
-        end
-    end)
+   scripts.plugins_installer:install_from_url("https://github.com/Delwing/arkadia-mapsync/releases/latest/download/arkadia-mapsync.zip")
 end
