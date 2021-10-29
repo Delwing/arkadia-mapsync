@@ -30,4 +30,6 @@ jobs:
         with:
           commit_message: bump version
           file_pattern: "map_sync.lua"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      
