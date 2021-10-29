@@ -11,7 +11,7 @@ function map_sync_map_opened_event()
 
     if map_sync.update_automatically then
         tempTimer(1.2, function()
-            map_sync:download_mapsync_scripts_update_if_available()
+            map_sync:update_mapsync_scripts_if_necessary()
         end)
     end
 
