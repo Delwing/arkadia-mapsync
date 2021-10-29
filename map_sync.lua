@@ -1,7 +1,7 @@
 
 map_sync = map_sync or {
     plugin_id = "arkadia-mapsync",
-    repository = "Delwing/mudlet-map-browser",
+    repository = "Delwing/arkadia-mapsync",
     version = "2.0",
     auth_token = "unknown",
     map_filename = "map_master3.dat",
