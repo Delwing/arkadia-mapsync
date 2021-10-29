@@ -2,7 +2,7 @@
 map_sync = map_sync or {
     plugin_id = "arkadia-mapsync",
     repository = "Delwing/arkadia-mapsync",
-    version = "2.0",
+    version = "2.1",
     auth_token = "unknown",
     map_filename = "map_master3.dat",
     current_version = 'unk',
@@ -26,7 +26,7 @@ function alias_func_map_sync_check_ver()
 end
 
 function alias_func_map_sync_changelog()
-    map_sync:download_changelog()
+    map_sync:print_changelog()
 end
 
 function alias_func_map_sync_mapsync()
