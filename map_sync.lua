@@ -70,11 +70,11 @@ function alias_func_map_sync_remove_gps()
 end
 
 function alias_func_map_sync_install_update()
-    map_sync:download_mapsync_scripts_update_if_available(false)
+    map_sync:update_mapsync_scripts_if_necessary(false)
 end
 
 function alias_func_map_sync_install_update_force()
-    map_sync:download_mapsync_scripts_update_if_available(true)
+    map_sync:update_mapsync_scripts_if_necessary(true)
 end
 
 function alias_func_map_sync_show_gps()

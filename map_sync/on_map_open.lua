@@ -26,5 +26,5 @@ function map_sync_map_opened_event()
     end
 end
 
-map_sync.login_handler = scripts.event_register:force_register_event_handler(map_sync.login_handler, "loginSuccessful", function() map_sync_map_opened_event() end)
+map_sync.login_handler = scripts.event_register:force_register_event_handler(map_sync.login_handler, "profileLoaded", function() map_sync_map_opened_event() end)
 

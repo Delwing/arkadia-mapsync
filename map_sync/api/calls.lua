@@ -28,11 +28,11 @@ function map_sync:print_changelog()
     end)
 end
 
-function map_sync:update_mapsync_scripts_if_necessary()
+function map_sync:update_mapsync_scripts_if_necessary(force)
     HttpClient:get(string.format("https://api.github.com/repos/%s/releases/latest", map_sync.repository), {}, function(response)
         local tag = response.tag_name
         local zipball = response.zipball_url
-        if map_sync.version ~= tag then
+        if map_sync.version ~= tag or force then
             scripts.plugins_installer:uninstall(map_sync.plugin_id)
             scripts.plugins_installer:install_from_url(zipball)
             scripts.state_store:set(map_sync.plugin_id, tag)
