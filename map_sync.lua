@@ -1,4 +1,3 @@
-
 map_sync = map_sync or {
     plugin_id = "arkadia-mapsync",
     repository = "Delwing/arkadia-mapsync",
