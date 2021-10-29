@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "name": "map_sync.auth_token",
+      "default_value": "",
+      "field_type": "string",
+      "macros_on_modify": []
+    },
+    {
+      "name": "map_sync.download_automatically",
+      "default_value": true,
+      "field_type": "boolean",
+      "macros_on_modify": []
+    },
+    {
+      "name": "map_sync.update_automatically",
+      "default_value": true,
+      "field_type": "boolean",
+      "macros_on_modify": []
+    }
+  ]
+}

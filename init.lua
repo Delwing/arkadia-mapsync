@@ -1,0 +1,20 @@
+return {
+    "http_client",
+    "map_sync",
+    "map_sync/help",
+    "map_sync/upload",
+    "map_sync/download",
+    "map_sync/api/api_call",
+    "map_sync/api/calls",
+    "map_sync/on_map_open",
+    "map_sync/gps",
+    "map_sync/draw_tools",
+    "map_sync/draw_tools/Universal Button Core",
+    "map_sync/draw_tools/Universal Container Core",
+    "map_sync/draw_tools/Universal Icon",
+    "map_sync/draw_tools/Buttons defined",
+    "map_sync/draw_tools/button_listener",
+    "map_sync/draw_tools/gui/main",
+    "map_sync/draw_tools/gui/mapper tools",
+    "map_sync/draw_tools/gui/switch"
+}

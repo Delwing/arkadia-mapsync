@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<TriggerPackage />
+	<TimerPackage />
+	<AliasPackage>
+		<Alias isActive="yes" isFolder="no">
+			<name>check_ver</name>
+			<script>alias_func_map_sync_check_ver()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_mapa$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>changelog</name>
+			<script>alias_func_map_sync_changelog()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_mapy$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>mapsync</name>
+			<script>alias_func_map_sync_mapsync()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_mapsync$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>mapsync_force</name>
+			<script>alias_func_map_sync_mapsync_force()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_mapsync!$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>mapsync_help</name>
+			<script>alias_func_map_sync_mapsync_help()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/mapsync$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>mapup</name>
+			<script>alias_func_map_sync_mapup()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_mapup$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>add_gps</name>
+			<script>alias_func_map_sync_add_gps()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>/dodaj_gps (.*)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>add_gps_area</name>
+			<script>alias_func_map_sync_add_gps_area()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>/dodaj_gps_obszar (.*)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>add_gps_within_rooms</name>
+			<script>alias_func_map_sync_add_gps_within_rooms()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>/dodaj_gps_lokacje ([0-9,]+) (.*)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>remove_gps</name>
+			<script>alias_func_map_sync_remove_gps()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/usun_gps ([0-9_]+)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>install_update</name>
+			<script>alias_func_map_sync_install_update()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_update_mapsync$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>install_update_force</name>
+			<script>alias_func_map_sync_install_update_force()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_update_mapsync!$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>show_gps</name>
+			<script>alias_func_map_sync_show_gps()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/gps$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>show_gps_room</name>
+			<script>alias_func_map_sync_show_gps_room()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/gps ([0-9]+)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>rysuj</name>
+			<script>alias_func_map_sync_rysuj()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/rysuj$</regex>
+		</Alias>
+	</AliasPackage>
+	<ActionPackage />
+	<ScriptPackage />
+	<KeyPackage />
+	<HelpPackage>
+		<helpURL></helpURL>
+	</HelpPackage>
+</MudletPackage>
