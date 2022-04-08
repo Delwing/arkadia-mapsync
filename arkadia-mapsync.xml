@@ -19,6 +19,13 @@
 			<regex>^/_mapy$</regex>
 		</Alias>
 		<Alias isActive="yes" isFolder="no">
+			<name>changelog</name>
+			<script>alias_func_map_sync_full_changelog()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^/_mapy!$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
 			<name>mapsync</name>
 			<script>alias_func_map_sync_mapsync()</script>
 			<command></command>

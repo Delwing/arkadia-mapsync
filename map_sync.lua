@@ -25,6 +25,10 @@ function alias_func_map_sync_check_ver()
 end
 
 function alias_func_map_sync_changelog()
+    map_sync:print_changelog(5)
+end
+
+function alias_func_map_sync_full_changelog()
     map_sync:print_changelog()
 end
 

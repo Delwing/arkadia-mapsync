@@ -7,13 +7,15 @@ function map_sync:print_state(callback)
     end)
 end
 
-function map_sync:print_changelog()
+function map_sync:print_changelog(limit)
     map_sync.ApiCall:new(map_sync.api_endpoint, "changelog=1"):call(function(response)
         cecho("\n <orange>Wersja  <grey>|  <orange>Data<grey>             |  <orange>Zmiany<grey>\n")
         cecho("         |                   |\n")
-        for k, v in pairs(response.map_update_entries) do
-            cecho("  " .. string.sub(v.rev .. "        ", 0, 7) .. "|  " .. os.date("%Y-%m-%d %H:%M", v.created) .. " |  ")
-            lines = string.split(v.comment, "\r\n")
+        local start = limit and #response.map_update_entries - limit or 1
+        for i = start, #response.map_update_entries, 1 do
+            local entry =response.map_update_entries[i]
+            cecho("  " .. string.sub(entry.rev .. "        ", 0, 7) .. "|  " .. os.date("%Y-%m-%d %H:%M", entry.created) .. " |  ")
+            local lines = string.split(entry.comment, "\r\n")
             for i, l in pairs(lines) do
                 if i == 1 then
                     cecho(l .. "\n")
