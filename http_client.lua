@@ -1,5 +1,5 @@
 ---
---- Temporary - will end up in scripts
+--- Temporary - will end up in main scripts repository
 ---
 
 HttpClient = HttpClient or {
@@ -26,7 +26,7 @@ local errorHandlerCallback = function(url, errorCallback, handlers)
         debugc(string.format("Error while calling %s - %s", url, response))
         killAnonymousEventHandler(handlers.successHandler)
         if errorCallback then
-            errorCallback()
+            errorCallback(response)
         end
     end
 end

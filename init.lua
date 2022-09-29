@@ -7,6 +7,7 @@ return {
     "map_sync/api/api_call",
     "map_sync/api/calls",
     "map_sync/on_map_open",
+    "github",
     "map_sync/gps",
     "map_sync/draw_tools",
     "map_sync/draw_tools/Universal Button Core",
